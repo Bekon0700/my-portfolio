@@ -5,6 +5,7 @@ import Myself from './components/myself/Myself';
 import About from './pages/about/About';
 import ContactMe from './pages/contact-me/ContactMe';
 import Home from "./pages/home/Home";
+import Works from './pages/my-work/Works';
 import Skills from './pages/skills/Skills';
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
         {
           path: 'skills',
           element: <Skills />
+        },
+        {
+          path: 'works',
+          element: <Works />
         },
         {
           path: 'contact',

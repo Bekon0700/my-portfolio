@@ -17,6 +17,7 @@ const Header = () => {
       <p className='text-2xl font-bold text-green-500 text-center'>My-Portfolio_</p>
       <div className=' text-green-300 font-semibold text-lg hidden lg:flex lg:flex-col justify-between items-center gap-8'>
         <Link to='/'>Home</Link>
+        <Link to='/works'>Works</Link>
         <Link to='/skills'>Skills</Link>
         <Link to='/about'>About</Link>
         <Link to='/contact'>Contact</Link>
@@ -26,13 +27,14 @@ const Header = () => {
         <AiFillLinkedin />
       </div>
       {/* mobile view navbar */}
-      <div className={navIconToggle ? `absolute top-0 -left-full w-2/3 h-screen bg-gray-900 ease-in duration-700 z-30` : `absolute top-0 left-0 w-full md:w-1/2 h-screen bg-gray-900 lg:hidden ease-in duration-700 z-30`}>
+      <div className={navIconToggle ? `absolute top-0 -left-full w-2/3 h-screen bg-gray-900 ease-in duration-700 z-30` : `fixed top-0 left-0 w-full md:w-1/2 h-screen bg-gray-900 lg:hidden ease-in duration-700 z-30`}>
         <div className='flex justify-between items-center w-11/12 mx-auto'>
           <p className='text-2xl font-bold text-green-500 flex justify-center items-center py-8'>My-Portfolio_</p>
           <GiCrossMark onClick={navBtn} className='text-2xl text-white' />
         </div>
         <div className='text-green-300 font-semibold text-xl flex flex-col gap-8 pt-8 items-center'>
           <Link onClick={navBtn} to='/'>Home</Link>
+          <Link onClick={navBtn} to='/works'>Works</Link>
           <Link onClick={navBtn} to='/skills'>Skills</Link>
           <Link onClick={navBtn} to='/about'>About</Link>
           <Link onClick={navBtn} to='/contact'>Contact</Link>

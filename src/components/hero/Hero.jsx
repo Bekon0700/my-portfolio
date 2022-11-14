@@ -9,7 +9,7 @@ const Hero = () => {
   const dev = `web developer`.split('')
   let i = 0
   return (
-    <div className='py-24' >
+    <div className='py-12' >
       <div className='flex flex-col justify-center'>
         <div className='flex '>
           {

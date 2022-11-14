@@ -40,7 +40,7 @@ const Skills = () => {
     const name = `My, Skills`.split('')
     let i = 0;
     return (
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-16 lg:py-0'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-12 lg:py-0'>
             <div className='flex flex-col gap-8 w-11/12 lg:w-2/4'>
                 <div>
                     <div className='flex'>
@@ -49,7 +49,7 @@ const Skills = () => {
                         }
                     </div>
                 </div>
-                <div className='flex flex-col gap-3 text-gray-400 text-lg lg:text-xl text-justify'>
+                <div className='flex flex-col gap-3 text-gray-400 text-lg lg:text-xl'>
                     <p>I have little bit experience in working as a freelancer. I solved data structer and algorithm related problems for several months.</p>
                     <p>But now i focused on web development, I mainly work with ReactJS, NodeJS, MongoDB for database. I have also some knowledge in SQL.</p>
                     <p>For design purpose I use tailwindCSS, and tailwind component library like daisy UI, mamba UI</p>

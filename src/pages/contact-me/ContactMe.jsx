@@ -30,7 +30,7 @@ const ContactMe = () => {
     }
 
     return (
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-16 lg:py-0'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-10 lg:py-0'>
             <div className='flex flex-col gap-8 w-11/12 lg:w-2/4'>
                 <div>
                     <div className='flex'>
