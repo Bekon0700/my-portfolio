@@ -32,7 +32,7 @@ const Header = () => {
           <p className='text-2xl font-bold text-green-500 flex justify-center items-center py-8'>My-Portfolio_</p>
           <GiCrossMark onClick={navBtn} className='text-2xl text-white' />
         </div>
-        <div className='text-green-300 font-semibold text-xl flex flex-col gap-0 pt-8 items-center'>
+        <div className='text-[#909096] font-semibold text-xl flex flex-col gap-0 pt-8 items-center'>
           <Link onClick={navBtn} className='w-full text-center py-3 border-b-2 border-[#282828]' to='/'>Home</Link>
           <Link onClick={navBtn} className='w-full text-center py-3 border-b-2 border-[#282828]' to='/works'>Works</Link>
           <Link onClick={navBtn} className='w-full text-center py-3 border-b-2 border-[#282828]' to='/skills'>Skills</Link>

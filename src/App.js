@@ -21,11 +21,11 @@ function App() {
         },
         {
           path: 'about',
-          element: <About />
+          element: <Myself home={false}/>
         },
         {
           path: 'skills',
-          element: <Skills />
+          element: <Skills home={false} />
         },
         {
           path: 'works',
@@ -33,7 +33,7 @@ function App() {
         },
         {
           path: 'contact',
-          element: <ContactMe />
+          element: <ContactMe home={false} />
         },
       ]
     }

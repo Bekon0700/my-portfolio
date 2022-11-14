@@ -20,7 +20,7 @@ const Tags = [
     'Machine Learning',
 ]
 
-const Myself = () => {
+const Myself = ({home}) => {
     let size = 0;
     if(window.screen.width <= 380){
         size = 110
@@ -48,7 +48,7 @@ const Myself = () => {
     const title = `Past, Present and Future`.split('')
     let i = 0;
     return (
-        <div className='flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center'>
+        <div className={home ? 'flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center w-11/12 mx-auto' : 'flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center h-full py-12 w-11/12 mx-auto'}>
             <div className='flex flex-col gap-8 lg:w-2/4'>
                 <div>
                     <div className='flex'>

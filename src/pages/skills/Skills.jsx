@@ -36,12 +36,13 @@ const data = [
 ]
 
 
-const Skills = () => {
+const Skills = ({home}) => {
+    console.log(home)
     const name = `My, Skills`.split('')
     let i = 0;
     return (
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-12 lg:py-0'>
-            <div className='flex flex-col gap-8 w-11/12 lg:w-2/4'>
+        <div className={home ? 'flex flex-col lg:flex-row justify-between items-center gap-12 w-11/12 mx-auto py-12 lg:py-0' : 'flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-12 lg:py-0'}>
+            <div className='flex flex-col gap-8 lg:w-2/4'>
                 <div>
                     <div className='flex'>
                         {

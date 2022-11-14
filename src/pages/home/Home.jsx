@@ -2,13 +2,15 @@ import React from 'react'
 import Hero from '../../components/hero/Hero'
 import Myself from '../../components/myself/Myself'
 import ContactMe from '../contact-me/ContactMe'
+import Skills from '../skills/Skills'
 
 const Home = () => {
   return (
-    <div className='w-11/12 mx-auto'>
+    <div className='my-12'>
         <Hero />
-        <Myself />
-        <ContactMe />
+        <Skills home={true}/>
+        <Myself home={true}/>
+        <ContactMe home={true} />
     </div>
   )
 }

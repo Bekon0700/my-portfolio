@@ -4,7 +4,7 @@ import JellyText from '../../utils/jelly-text/JellyText';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
-const ContactMe = () => {
+const ContactMe = ({home}) => {
     const formRef = useRef()
     const name = `Contact Me`.split('')
     let i = 0;
@@ -30,8 +30,8 @@ const ContactMe = () => {
     }
 
     return (
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-10 lg:py-0'>
-            <div className='flex flex-col gap-8 w-11/12 lg:w-2/4'>
+        <div className={home ? 'flex flex-col lg:flex-row justify-between items-center gap-12 w-11/12 mx-auto py-10 lg:py-0' : 'flex flex-col lg:flex-row justify-between items-center gap-12 lg:h-screen w-11/12 mx-auto py-10 lg:py-0'}>
+            <div className='flex flex-col gap-8 lg:w-2/4'>
                 <div>
                     <div className='flex'>
                         {
@@ -47,7 +47,7 @@ const ContactMe = () => {
                     <p>+88 01856493398</p>
                 </div>
             </div>
-            <div className='w-11/12 lg:w-1/2 flex flex-col gap-3'>
+            <div className='lg:w-1/2 flex flex-col gap-3'>
                 <form ref={formRef} onSubmit={sendMail} className='flex flex-col gap-2'>
                     <div className='flex w-full gap-2'>
                         <input type="text" name="user_name" placeholder='Name' className='w-1/2 bg-stone-700 p-2 outline-none text-gray-400 font-medium' required />
