@@ -40,7 +40,7 @@ function App() {
   ])
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#1D1D1D]">
      <RouterProvider router={router}/>
      <Toaster />
     </div>
